@@ -1,0 +1,36 @@
+# 边框颜色
+
+通过边框颜色来判断目前操作的区域
+
+# 示例
+
+初始化
+
+```python
+import curses
+
+# color
+curses.start_color()
+curses.use_default_colors()
+curses.init_pair(1, curses.COLOR_WHITE, -1)
+curses.init_pair(2, curses.COLOR_GREEN, -1)
+
+DEFAULT_COLOR = 1
+FG_GREEN_COLOR = 2
+```
+
+调用
+
+```python
+mainScreen = curses.initscr()
+
+mainScreen.clear()
+if activeScroll:
+    mainScreen.attron(curses.color_pair(FG_GREEN_COLOR))
+
+mainScreen.border(0)
+
+if activeScroll:
+    mainScreen.attroff(curses.color_pair(FG_GREEN_COLOR))
+mainScreen.refresh()
+```

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FolderLevel</title>
+
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/default.css?v=25380bb4" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../../_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            层级目录
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">PlantUML类图</a></li>
+<li><a class="reference internal" href="#id1">参考文档</a></li>
+<li><a class="reference internal" href="#id2">plantuml</a></li>
+<li><a class="reference internal" href="#id3">定义能见度</a></li>
+<li><a class="reference internal" href="#sample">sample</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">层级目录</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs"> 
+<li style="float: right;margin-left: 10px;"><a href="javascript:history.forward()">Forward</a></li>
+<li style="float: right;margin-left: 10px;"><a href="javascript:history.back()">Go Back</a> | </li>
+<li style="float: right;margin-left: 10px;"><a href="/index.html">Home</a> | </li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="plantuml">
+<h1>PlantUML类图<a class="headerlink" href="#plantuml" title="Link to this heading"></a></h1>
+<p>PlantUML类图使用方法</p>
+</section>
+<section id="id1">
+<h1>参考文档<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://plantuml.com/zh/class-diagram">类成员的箭头方向(Arrows from/to class members)</a></p></li>
+</ul>
+</section>
+<section id="id2">
+<h1>plantuml<a class="headerlink" href="#id2" title="Link to this heading"></a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">docker</span> <span class="pre">run</span> <span class="pre">-d</span> <span class="pre">-p</span> <span class="pre">8081:8080</span> <span class="pre">plantuml/plantuml-server</span></code></p>
+</section>
+<section id="id3">
+<h1>定义能见度<a class="headerlink" href="#id3" title="Link to this heading"></a></h1>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>字符</p></th>
+<th class="head"><p>可访问性</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-</p></td>
+<td><p>private 私有</p></td>
+</tr>
+<tr class="row-odd"><td><p>#</p></td>
+<td><p>protected 受保护</p></td>
+</tr>
+<tr class="row-even"><td><p>~</p></td>
+<td><p>package private 包内可见</p></td>
+</tr>
+<tr class="row-odd"><td><p>+</p></td>
+<td><p>public 公有</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sample">
+<h1>sample<a class="headerlink" href="#sample" title="Link to this heading"></a></h1>
+<p>示例1</p>
+<div class="highlight-plantuml notranslate"><div class="highlight"><pre><span></span>@startuml
+
+struct platform_device {
+    const char      *name;
+    bool            id_auto;
+    struct          dev;
+}
+
+struct device {
+    struct device_driver *driver;
+    void        *platform_data;
+    void        *driver_data;
+}
+
+platform_device::dev --&gt; device
+
+@enduml
+</pre></div>
+</div>
+<p>示例2</p>
+<div class="highlight-plantuml notranslate"><div class="highlight"><pre><span></span>@startuml
+
+struct platform_device {
+    +const char      *name;
+    +bool            id_auto;
+    +struct          dev;
+}
+
+struct device {
+    +struct device_driver *driver;
+    +void        *platform_data;
+    +void        *driver_data;
+}
+
+platform_device::dev --&gt; device
+
+@enduml
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, FolderLevel.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

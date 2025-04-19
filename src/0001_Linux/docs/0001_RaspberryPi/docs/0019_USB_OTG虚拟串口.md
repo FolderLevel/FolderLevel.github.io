@@ -26,4 +26,4 @@ USB OTG虚拟串口，可用于学习串口通信
 
 # 参考C代码
 
-https://github.com/ZengjfOS/UartRS
+https://github.com/FolderLevel/UartRS
