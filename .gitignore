@@ -1,0 +1,12 @@
+.DS_Store
+_build
+log.txt
+.ipynb_checkpoints
+docs
+!**/docs
+__pycache__
+*.bkp
+*.dtmp
+/out
+*.ppt#
+.vscode/settings.json

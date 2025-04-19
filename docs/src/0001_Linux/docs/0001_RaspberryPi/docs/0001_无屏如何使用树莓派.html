@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FolderLevel</title>
+
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../../_static/default.css?v=25380bb4" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../../_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../../index.html" class="icon icon-home">
+            层级目录
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">无屏怎么使用树莓派？</a></li>
+<li><a class="reference internal" href="#id2">一、什么是树莓派</a></li>
+<li><a class="reference internal" href="#id3">二、安装树莓派官方系统</a></li>
+<li><a class="reference internal" href="#wifissh">三、配置树莓派Wifi并开启SSH</a></li>
+<li><a class="reference internal" href="#mobaxterm-ssh">四、MobaXterm SSH连接树莓派</a></li>
+<li><a class="reference internal" href="#id4">五、远程桌面</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">层级目录</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs"> 
+<li style="float: right;margin-left: 10px;"><a href="javascript:history.forward()">Forward</a></li>
+<li style="float: right;margin-left: 10px;"><a href="javascript:history.back()">Go Back</a> | </li>
+<li style="float: right;margin-left: 10px;"><a href="/index.html">Home</a> | </li>
+
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>无屏怎么使用树莓派？<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>一个屏比一个树莓派还贵，不大可能为了玩个树莓派还单独买个屏，并不是每个人都有屏的需求</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#%E4%B8%80%E4%BB%80%E4%B9%88%E6%98%AF%E6%A0%91%E8%8E%93%E6%B4%BE"><span class="xref myst">一、什么是树莓派</span></a></p></li>
+<li><p><a class="reference internal" href="#%E4%BA%8C%E5%AE%89%E8%A3%85%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%98%E6%96%B9%E7%B3%BB%E7%BB%9F"><span class="xref myst">二、安装树莓派官方系统</span></a></p></li>
+<li><p><a class="reference internal" href="#%E4%B8%89%E9%85%8D%E7%BD%AE%E6%A0%91%E8%8E%93%E6%B4%BEWifi%E5%B9%B6%E5%BC%80%E5%90%AFSSH"><span class="xref myst">三、配置树莓派Wifi并开启SSH</span></a></p></li>
+<li><p><a class="reference internal" href="#%E5%9B%9BMobaXterm-SSH%E8%BF%9E%E6%8E%A5%E6%A0%91%E8%8E%93%E6%B4%BE"><span class="xref myst">四、MobaXterm SSH连接树莓派</span></a></p></li>
+<li><p><a class="reference internal" href="#%E4%BA%94%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2"><span class="xref myst">五、远程桌面</span></a></p></li>
+</ul>
+</section>
+<section id="id2">
+<h1>一、什么是树莓派<a class="headerlink" href="#id2" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>官方网址：https://www.raspberrypi.org/</p></li>
+<li><p>Raspberry Pi 4 Model B</p></li>
+</ul>
+<p><img alt="0001_NO_Screen_RPI_4B_Interfaces.png" src="../../../../../_images/0001_NO_Screen_RPI_4B_Interfaces.png" /></p>
+<p><img alt="0001_NO_Screen_RPI_4B_40P.png" src="../../../../../_images/0001_NO_Screen_RPI_4B_40P.png" /></p>
+</section>
+<section id="id3">
+<h1>二、安装树莓派官方系统<a class="headerlink" href="#id3" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>官方下载工具网址：https://www.raspberrypi.org/software/</p></li>
+<li><p>Raspberry Pi Imager<br />
+<img alt="0001_NO_Screen_RPI_SD_Burning.png" src="../../../../../_images/0001_NO_Screen_RPI_SD_Burning.png" /></p></li>
+<li><p><strong>在刷系统的时候可以通过【设置】来指定用户名和密码</strong><br />
+<img alt="0001_create_user_and_password.png" src="../../../../../_images/0001_create_user_and_password.png" /></p></li>
+</ul>
+</section>
+<section id="wifissh">
+<h1>三、配置树莓派Wifi并开启SSH<a class="headerlink" href="#wifissh" title="Link to this heading"></a></h1>
+<ul>
+<li><p>系统安装完成后重新插拔USB SD读卡器，会挂在FAT格式的boot分区</p></li>
+<li><p>在boot分区根目录创建<code class="docutils literal notranslate"><span class="pre">wpa_supplicant.conf</span></code>文件，并写入</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ctrl_interface</span><span class="o">=</span><span class="n">DIR</span><span class="o">=/</span><span class="n">var</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">wpa_supplicant</span> <span class="n">GROUP</span><span class="o">=</span><span class="n">netdev</span>
+<span class="n">update_config</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">country</span><span class="o">=</span><span class="n">CN</span>
+
+<span class="n">network</span><span class="o">=</span><span class="p">{</span>
+        <span class="n">ssid</span><span class="o">=</span><span class="s2">&quot;your wifi ssid&quot;</span>
+        <span class="n">psk</span><span class="o">=</span><span class="s2">&quot;your wifi password&quot;</span>
+        <span class="n">key_mgmt</span><span class="o">=</span><span class="n">WPA</span><span class="o">-</span><span class="n">PSK</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p>在boot分区根目录创建ssh.txt文件，空文件就行</p></li>
+<li><p>为什么这么做可以配置Wifi和SSH，原因后续解读</p></li>
+</ul>
+</section>
+<section id="mobaxterm-ssh">
+<h1>四、MobaXterm SSH连接树莓派<a class="headerlink" href="#mobaxterm-ssh" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>查看树莓派IP</p>
+<ul>
+<li><p>登陆路由器查看新登录的设备IP，等一小会</p></li>
+</ul>
+</li>
+<li><p>登陆树莓派</p>
+<ul>
+<li><p>用户：pi</p></li>
+<li><p>密码：raspberry</p></li>
+</ul>
+</li>
+</ul>
+<p><img alt="0001_NO_Screen_RPI_SSH.png" src="../../../../../_images/0001_NO_Screen_RPI_SSH.png" /></p>
+</section>
+<section id="id4">
+<h1>五、远程桌面<a class="headerlink" href="#id4" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p>sudo apt-get update</p></li>
+<li><p>sudo apt-get install xrdp</p></li>
+<li><p>Windows远程桌面输入账号密码登录</p>
+<ul>
+<li><p>用户：pi</p></li>
+<li><p>密码：raspberry</p></li>
+</ul>
+</li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, FolderLevel.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
